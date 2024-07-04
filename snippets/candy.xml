@@ -18,7 +18,7 @@
             <!-- CandyRoms -->
   <remote  name="staging"
            fetch="https://github.com/CandyRoms-staging"
-           revision="c14-s" />
+           revision="c14" />
            
   <!-- Remote Device -->
   <project path="device/candy/sepolicy" name="device_candy_sepolicy" revision="c14" remote="candy" />
@@ -110,12 +110,41 @@
   <project path="system/sepolicy" name="system_sepolicy" remote="candy" />
   <project path="system/update_engine" name="system_update_engine" remote="candy" />
   <project path="system/vold" name="system_vold" remote="candy" />
-    
+  <project path="system/security" name="system_security" remote="candy" />
+      
     <!-- Remote Vendor -->
   <project path="vendor/candy" name="vendor_candy" remote="candy" />
   <project path="vendor/gms" name="vendor_gms" remote="candy-gitea" revision="c14" clone-depth="1" />
   <project path="vendor/support" name="vendor_support" remote="candy" revision="c14"  />
   <project path="vendor/qcom/opensource/vibrator" name="vendor_qcom_opensource_vibrator" revision="c14" remote="candy" />
+
+   <!-- Staging repos -->
+ <project path="external/cronet" name="external_cronet" revision="14" remote="staging" />
+  <project path="external/dtc" name="external_dtc" remote="staging" />
+  <project path="external/wpa_supplicant_8" name="external_wpa_supplicant_8" remote="staging" />
+  <project path="external/zstd" name="external_zstd" remote="staging" />
+  <project path="kernel/configs" name="kernel_configs" remote="candy" />
+  <project path="hardware/ril" name="hardware_ril" remote="staging" />
+  <project path="hardware/libhardware" name="hardware_libhardware" remote="staging" />
+  <project path="vendor/codeaurora/telephony" name="android_vendor_codeaurora_telephony" groups="qcom,qssi" remote="staging" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal" name="android_vendor_qcom_opensource_audio-hal_st-hal" groups="qcom,lahaina" remote="staging" />
+  <project path="vendor/qcom/opensource/audio-hal/st-hal-ar" name="android_vendor_qcom_opensource_audio-hal_st-hal-ar" groups="qcom,kailua-audio" remote="staging" />
+  <project path="vendor/qcom/opensource/commonsys-intf/display" name="android_vendor_qcom_opensource_display-commonsys-intf" groups="qcom,qssi" remote="staging" />
+  <project path="vendor/qcom/opensource/commonsys/display" name="android_vendor_qcom_opensource_display-commonsys" groups="qcom,qssi" remote="staging" />
+  <project path="vendor/qcom/opensource/commonsys/fm" name="android_vendor_qcom_opensource_fm-commonsys" groups="qcom,qssi" remote="staging" />
+  <project path="vendor/qcom/opensource/core-utils-sys" name="android_vendor_qcom_opensource_core-utils-sys" groups="qcom,qssi" remote="staging" />
+  <project path="vendor/qcom/opensource/core-utils-vendor" name="android_vendor_qcom_opensource_core-utils-vendor" groups="qcom,kailua-vendor" remote="staging" />
+  <project path="vendor/qcom/opensource/display" name="android_vendor_qcom_opensource_display" groups="qcom" remote="staging" />
+  <project path="vendor/qcom/opensource/data-ipa-cfg-mgr-legacy-um" name="android_vendor_qcom_opensource_data-ipa-cfg-mgr" groups="qcom,lahaina" revision="lineage-21.0-legacy-um" remote="staging" />
+  <project path="vendor/qcom/opensource/dataservices" name="android_vendor_qcom_opensource_dataservices" groups="qcom,kailua-vendor" remote="staging" />
+  <project path="vendor/qcom/opensource/healthd-ext" name="android_vendor_qcom_opensource_healthd-ext" groups="qcom,kailua-vendor" remote="staging" />
+  <project path="vendor/qcom/opensource/interfaces" name="android_vendor_qcom_opensource_interfaces" groups="qcom,qssi" remote="staging" />
+  <project path="vendor/qcom/opensource/libfmjni" name="android_vendor_qcom_opensource_libfmjni" groups="qcom" remote="staging" />
+  <project path="vendor/qcom/opensource/power" name="android_vendor_qcom_opensource_power" groups="qcom,kailua-vendor" remote="staging" />
+  <project path="vendor/qcom/opensource/thermal-engine" name="android_vendor_qcom_opensource_thermal-engine" groups="qcom,kailua-vendor" remote="staging" />
+  <project path="vendor/qcom/opensource/usb" name="android_vendor_qcom_opensource_usb" groups="qcom,kailua-vendor" remote="staging" />
+  <project path="vendor/qcom/opensource/wfd-commonsys" name="android_vendor_qcom_opensource_wfd-commonsys" groups="qcom,kailua-video" remote="staging" />
+  
 </manifest>
   
 
