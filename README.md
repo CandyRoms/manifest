@@ -12,7 +12,7 @@ Please set up your build environment by following the [AOSP guide](https://sourc
 
 You might want to take a look at @akhilnarang's scripts [here](https://github.com/akhilnarang/scripts).
 
-To initialize your local repository using the Candy c11 trees, use this command:
+To initialize your local repository using the Candy c14 trees, use this command:
 
 
     repo init -u https://github.com/CandyRoms/manifest.git -b c14
